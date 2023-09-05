@@ -11,6 +11,10 @@ class AdScraperPipeline:
     def process_item(self, item, spider):
         return item
 
+
+# This class is used to establish connection with MongoDB database
+#  and store extracted data to "phones_data" database and "phones" collection
+#  MongoDB credentials are stored in settings.py file lines 66 to 69
 class MongoDBPipeline(object):
     collection_name = 'phones'
 

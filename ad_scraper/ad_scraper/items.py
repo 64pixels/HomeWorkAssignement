@@ -7,8 +7,8 @@ import scrapy
 
 
 class AdScraperItem(scrapy.Item):
-    # define the fields for your item here like:
     
+    # define the fields for your item here like:
     productName = scrapy.Field()
     brand = scrapy.Field()
     description = scrapy.Field()
